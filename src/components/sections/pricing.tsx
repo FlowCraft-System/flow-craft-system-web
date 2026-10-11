@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import { HugeiconsIcon } from "@hugeicons/react"
 import { CheckmarkCircle02Icon } from "@hugeicons/core-free-icons"
@@ -19,15 +20,88 @@ import { Reveal, Stagger, StaggerItem } from "@/components/shared/reveal"
 import { whatsappLink } from "@/lib/site"
 import { cn } from "@/lib/utils"
 
+type Plan = {
+  name: string
+  price: string
+  period: string
+  description: string
+  features: string[]
+}
+
+function PricingCard({ plan, popular }: { plan: Plan; popular: boolean }) {
+  const { t } = useTranslation()
+  const [revealed, setRevealed] = useState(false)
+
+  return (
+    <Card
+      onMouseEnter={() => setRevealed(true)}
+      onFocus={() => setRevealed(true)}
+      className={cn(
+        "pricing-card group/card relative h-full overflow-hidden bg-card/60 transition-shadow duration-300",
+        revealed && "pricing-revealed",
+        popular ? "ring-2 ring-primary/60" : "hover:ring-primary/40",
+      )}
+    >
+      <span aria-hidden className="pricing-fill" />
+
+      <CardHeader className="relative z-10">
+        <div className="flex items-center justify-between gap-2">
+          <CardTitle className="pricing-text text-base">{plan.name}</CardTitle>
+          {popular ? <Badge>{t("pricing.popular")}</Badge> : null}
+        </div>
+        <div className="flex items-baseline gap-1.5 pt-1">
+          <span className="pricing-text text-xs text-muted-foreground">
+            {plan.period}
+          </span>
+          <span className="pricing-text font-heading text-3xl font-semibold">
+            {plan.price}
+          </span>
+        </div>
+        <CardDescription className="pricing-text">
+          {plan.description}
+        </CardDescription>
+      </CardHeader>
+
+      <CardContent className="relative z-10 flex-1">
+        <ul className="flex flex-col gap-2.5">
+          {plan.features.map((feature) => (
+            <li key={feature} className="flex items-start gap-2 text-sm">
+              <HugeiconsIcon
+                icon={CheckmarkCircle02Icon}
+                strokeWidth={2}
+                className="pricing-text mt-0.5 size-4 shrink-0 text-primary"
+              />
+              <span className="pricing-text text-muted-foreground">{feature}</span>
+            </li>
+          ))}
+        </ul>
+      </CardContent>
+
+      <CardFooter className="relative z-10 mt-auto">
+        <Button
+          variant={popular ? "default" : "outline"}
+          className="pricing-text h-9 w-full text-sm"
+          render={
+            <a
+              href={whatsappLink(t("pricing.ctaMessage", { plan: plan.name }))}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`${t("pricing.cta")} ${plan.name}`}
+            />
+          }
+          nativeButton={false}
+        >
+          <FaWhatsapp aria-hidden />
+          {t("pricing.cta")}
+        </Button>
+      </CardFooter>
+    </Card>
+  )
+}
+
 export function Pricing() {
   const { t } = useTranslation()
-  const plans = t("pricing.plans", { returnObjects: true }) as {
-    name: string
-    price: string
-    period: string
-    description: string
-    features: string[]
-  }[]
+  const plans = t("pricing.plans", { returnObjects: true }) as Plan[]
 
   return (
     <section
@@ -53,69 +127,11 @@ export function Pricing() {
         </Reveal>
 
         <Stagger className="grid items-stretch gap-6 lg:grid-cols-3" stagger={0.12}>
-          {plans.map((plan, index) => {
-            const popular = index === 1
-            return (
-              <StaggerItem key={plan.name} className="h-full">
-                <Card
-                  className={cn(
-                    "h-full bg-card/60",
-                    popular && "ring-2 ring-primary/60",
-                  )}
-                >
-                  <CardHeader>
-                    <div className="flex items-center justify-between gap-2">
-                      <CardTitle className="text-base">{plan.name}</CardTitle>
-                      {popular ? <Badge>{t("pricing.popular")}</Badge> : null}
-                    </div>
-                    <div className="flex items-baseline gap-1.5 pt-1">
-                      <span className="text-xs text-muted-foreground">
-                        {plan.period}
-                      </span>
-                      <span className="font-heading text-3xl font-semibold">
-                        {plan.price}
-                      </span>
-                    </div>
-                    <CardDescription>{plan.description}</CardDescription>
-                  </CardHeader>
-
-                  <CardContent className="flex-1">
-                    <ul className="flex flex-col gap-2.5">
-                      {plan.features.map((feature) => (
-                        <li key={feature} className="flex items-start gap-2 text-sm">
-                          <HugeiconsIcon
-                            icon={CheckmarkCircle02Icon}
-                            strokeWidth={2}
-                            className="mt-0.5 size-4 shrink-0 text-primary"
-                          />
-                          <span className="text-muted-foreground">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-
-                  <CardFooter className="mt-auto">
-                    <Button
-                      variant={popular ? "default" : "outline"}
-                      className="h-9 w-full text-sm"
-                      render={
-                        <a
-                          href={whatsappLink(t("pricing.ctaMessage", { plan: plan.name }))}
-                          target="_blank"
-                          rel="noreferrer"
-                          aria-label={`${t("pricing.cta")} ${plan.name}`}
-                        />
-                      }
-                      nativeButton={false}
-                    >
-                      <FaWhatsapp aria-hidden />
-                      {t("pricing.cta")}
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </StaggerItem>
-            )
-          })}
+          {plans.map((plan, index) => (
+            <StaggerItem key={plan.name} className="h-full">
+              <PricingCard plan={plan} popular={index === 1} />
+            </StaggerItem>
+          ))}
         </Stagger>
 
         <Reveal>
