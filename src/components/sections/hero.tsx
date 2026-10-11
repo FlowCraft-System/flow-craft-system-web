@@ -17,8 +17,8 @@ import {
   SparklesIcon,
   UserGroupIcon,
   Wallet02Icon,
-  WhatsappIcon,
 } from "@hugeicons/core-free-icons"
+import { FaWhatsapp } from "react-icons/fa6"
 
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -253,7 +253,7 @@ export function Hero() {
                 }
                 nativeButton={false}
               >
-                <HugeiconsIcon icon={WhatsappIcon} data-icon="inline-start" strokeWidth={2} />
+                <FaWhatsapp aria-hidden />
                 {t("actions.whatsapp")}
               </Button>
               <Button

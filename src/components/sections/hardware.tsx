@@ -9,8 +9,8 @@ import {
   PrinterIcon,
   Shield01Icon,
   Wifi01Icon,
-  WhatsappIcon,
 } from "@hugeicons/core-free-icons"
+import { FaWhatsapp } from "react-icons/fa6"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -87,7 +87,7 @@ export function Hardware() {
               }
               nativeButton={false}
             >
-              <HugeiconsIcon icon={WhatsappIcon} data-icon="inline-start" strokeWidth={2} />
+              <FaWhatsapp aria-hidden />
               {t("actions.whatsapp")}
             </Button>
           </Reveal>

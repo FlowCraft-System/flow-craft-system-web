@@ -10,6 +10,7 @@
     "precios": "Precios",
     "equipos": "Equipos",
     "portafolio": "Casos",
+    "testimonios": "Testimonios",
     "faq": "Preguntas",
     "contacto": "Contacto"
   },
@@ -165,6 +166,31 @@
         "title": "Sistema de gestión de donaciones",
         "description": "Construimos una plataforma para organizar su inventario y tener un mejor control de las donaciones, con reportes y analítica para tomar decisiones.",
         "tags": ["Inventario", "Donaciones", "Control", "Reportes", "Analítica"]
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Testimonios",
+    "title": "Lo que dicen nuestros clientes",
+    "subtitle": "Negocios y organizaciones que ya trabajan con FlowCraft Systems.",
+    "items": [
+      {
+        "quote": "Antes llevábamos todo en cuadernos y Excel. Hoy sé exactamente cuánto vendo, quién me debe y cuánto gano. El sistema cambió mi negocio.",
+        "name": "Adrián M.",
+        "role": "Propietario",
+        "company": "Café Americano Adriani"
+      },
+      {
+        "quote": "Necesitábamos controlar el inventario y las donaciones. FlowCraft entendió nuestra operación y nos entregó una plataforma clara y fácil de usar.",
+        "name": "María G.",
+        "role": "Coordinadora",
+        "company": "Fundación Wayuu Taya"
+      },
+      {
+        "quote": "El acompañamiento fue excelente: nos capacitaron y hasta nos consiguieron los equipos con garantía. 100% recomendados.",
+        "name": "José R.",
+        "role": "Gerente",
+        "company": "Bodegón La Estrella"
       }
     ]
   },

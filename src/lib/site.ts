@@ -27,6 +27,7 @@ export const sectionIds = [
   "precios",
   "equipos",
   "portafolio",
+  "testimonios",
   "faq",
   "contacto",
 ] as const

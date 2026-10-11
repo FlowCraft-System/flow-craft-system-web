@@ -10,6 +10,7 @@
     "precios": "Pricing",
     "equipos": "Hardware",
     "portafolio": "Case studies",
+    "testimonios": "Testimonials",
     "faq": "FAQ",
     "contacto": "Contact"
   },
@@ -165,6 +166,31 @@
         "title": "Donation management system",
         "description": "We built a platform to organize their inventory and gain better control of donations, with reports and analytics to support decisions.",
         "tags": ["Inventory", "Donations", "Control", "Reports", "Analytics"]
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "What our clients say",
+    "subtitle": "Businesses and organizations already working with FlowCraft Systems.",
+    "items": [
+      {
+        "quote": "We used to track everything in notebooks and Excel. Now I know exactly how much I sell, who owes me and how much I earn. The system changed my business.",
+        "name": "Adrián M.",
+        "role": "Owner",
+        "company": "Café Americano Adriani"
+      },
+      {
+        "quote": "We needed to control inventory and donations. FlowCraft understood our operation and delivered a clear, easy-to-use platform.",
+        "name": "María G.",
+        "role": "Coordinator",
+        "company": "Wayuu Taya Foundation"
+      },
+      {
+        "quote": "The support was excellent: they trained us and even sourced our equipment with warranty. 100% recommended.",
+        "name": "José R.",
+        "role": "Manager",
+        "company": "Bodegón La Estrella"
       }
     ]
   },

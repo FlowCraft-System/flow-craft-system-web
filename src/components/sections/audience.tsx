@@ -12,7 +12,10 @@ export function Audience() {
   const items = t("audience.items", { returnObjects: true }) as string[]
 
   return (
-    <section id="para-quien" className="relative py-20 sm:py-24">
+    <section
+      id="para-quien"
+      className="relative border-y border-border/60 bg-brand/5 py-20 sm:py-24"
+    >
       <Container className="flex flex-col gap-12">
         <SectionHeading
           eyebrow={t("audience.eyebrow")}

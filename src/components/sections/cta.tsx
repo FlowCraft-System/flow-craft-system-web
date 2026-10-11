@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import { HugeiconsIcon } from "@hugeicons/react"
-import { Calendar01Icon, WhatsappIcon } from "@hugeicons/core-free-icons"
+import { Calendar01Icon } from "@hugeicons/core-free-icons"
+import { FaWhatsapp } from "react-icons/fa6"
 
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -81,7 +82,7 @@ export function FinalCta() {
                 }
                 nativeButton={false}
               >
-                <HugeiconsIcon icon={WhatsappIcon} data-icon="inline-start" strokeWidth={2} />
+                <FaWhatsapp aria-hidden />
                 {t("cta.primary")}
               </Button>
               <Button

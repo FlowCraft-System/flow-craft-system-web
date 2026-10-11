@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next"
 import { HugeiconsIcon } from "@hugeicons/react"
-import { CheckmarkCircle02Icon, WhatsappIcon } from "@hugeicons/core-free-icons"
+import { CheckmarkCircle02Icon } from "@hugeicons/core-free-icons"
+import { FaWhatsapp } from "react-icons/fa6"
 
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -29,7 +30,10 @@ export function Pricing() {
   }[]
 
   return (
-    <section id="precios" className="relative py-20 sm:py-24">
+    <section
+      id="precios"
+      className="relative border-y border-border/60 bg-brand/5 py-20 sm:py-24"
+    >
       <Container className="flex flex-col gap-12">
         <SectionHeading
           eyebrow={t("pricing.eyebrow")}
@@ -104,7 +108,7 @@ export function Pricing() {
                       }
                       nativeButton={false}
                     >
-                      <HugeiconsIcon icon={WhatsappIcon} data-icon="inline-start" strokeWidth={2} />
+                      <FaWhatsapp aria-hidden />
                       {t("pricing.cta")}
                     </Button>
                   </CardFooter>

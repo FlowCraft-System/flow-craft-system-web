@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import { useTranslation } from "react-i18next"
 import { HugeiconsIcon } from "@hugeicons/react"
-import { Menu01Icon, WhatsappIcon } from "@hugeicons/core-free-icons"
+import { Menu01Icon } from "@hugeicons/core-free-icons"
+import { FaWhatsapp } from "react-icons/fa6"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -18,6 +19,15 @@ import { Logo } from "@/components/shared/logo"
 import { Container } from "@/components/shared/container"
 import { site, whatsappLink, sectionIds } from "@/lib/site"
 import { cn } from "@/lib/utils"
+
+const desktopNavIds = [
+  "para-quien",
+  "proceso",
+  "precios",
+  "portafolio",
+  "testimonios",
+  "faq",
+] as const
 
 function useScrolled(threshold = 12) {
   const [scrolled, setScrolled] = useState(false)
@@ -38,6 +48,9 @@ export function Navbar() {
   const [open, setOpen] = useState(false)
 
   const links = sectionIds.map((id) => ({ id, label: t(`nav.${id}`) }))
+  const desktopLinks = links.filter((link) =>
+    desktopNavIds.includes(link.id as (typeof desktopNavIds)[number]),
+  )
 
   return (
     <header
@@ -54,7 +67,7 @@ export function Navbar() {
         </a>
 
         <nav className="hidden items-center gap-1 lg:flex">
-          {links.map((link) => (
+          {desktopLinks.map((link) => (
             <Button
               key={link.id}
               variant="ghost"
@@ -85,7 +98,7 @@ export function Navbar() {
             }
             nativeButton={false}
           >
-            <HugeiconsIcon icon={WhatsappIcon} data-icon="inline-start" strokeWidth={2} />
+            <FaWhatsapp aria-hidden />
             {t("actions.whatsapp")}
           </Button>
 
@@ -139,7 +152,7 @@ export function Navbar() {
                   }
                   nativeButton={false}
                 >
-                  <HugeiconsIcon icon={WhatsappIcon} data-icon="inline-start" strokeWidth={2} />
+                  <FaWhatsapp aria-hidden />
                   {t("actions.whatsapp")}
                 </Button>
               </div>

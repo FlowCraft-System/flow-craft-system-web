@@ -6,22 +6,13 @@ import {
 } from "@hugeicons/core-free-icons"
 
 import { Badge } from "@/components/ui/badge"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
 import { Container } from "@/components/shared/container"
 import { SectionHeading } from "@/components/shared/section-heading"
 import { Stagger, StaggerItem } from "@/components/shared/reveal"
+import { BrandBand } from "@/components/shared/brand-band"
+import { GlassCard } from "@/components/shared/glass-card"
 
 const caseIcons = [StoreManagement01Icon, HandshakeIcon]
-const caseBars = [
-  [45, 70, 55, 88, 66, 96],
-  [60, 40, 78, 58, 90, 72],
-]
 
 export function Portfolio() {
   const { t } = useTranslation()
@@ -34,7 +25,7 @@ export function Portfolio() {
   }[]
 
   return (
-    <section id="portafolio" className="relative py-20 sm:py-24">
+    <BrandBand id="portafolio" variant="ink">
       <Container className="flex flex-col gap-12">
         <SectionHeading
           eyebrow={t("portfolio.eyebrow")}
@@ -45,52 +36,46 @@ export function Portfolio() {
         <Stagger className="grid gap-6 md:grid-cols-2">
           {cases.map((item, index) => {
             const Icon = caseIcons[index] ?? StoreManagement01Icon
-            const bars = caseBars[index] ?? caseBars[0]
             return (
               <StaggerItem key={item.client} className="h-full">
-                <Card className="h-full overflow-hidden bg-card/60">
-                  <div className="relative flex h-40 items-center justify-center overflow-hidden border-b border-border/60 bg-linear-to-br from-brand to-brand-deep">
-                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.28),transparent_55%)]" />
-                    <span className="relative flex size-16 items-center justify-center rounded-2xl bg-white/10 text-white ring-1 ring-white/25 backdrop-blur">
-                      <HugeiconsIcon icon={Icon} strokeWidth={1.6} className="size-8" />
+                <GlassCard className="flex h-full flex-col gap-4">
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="glass-strong flex size-12 items-center justify-center rounded-xl">
+                      <HugeiconsIcon
+                        icon={Icon}
+                        strokeWidth={1.7}
+                        className="size-6"
+                      />
                     </span>
-                    <div className="absolute right-4 bottom-4 flex items-end gap-1">
-                      {bars.map((height, barIndex) => (
-                        <span
-                          key={barIndex}
-                          className="w-1.5 rounded-full bg-white/40"
-                          style={{ height: `${height * 0.32}px` }}
-                        />
-                      ))}
-                    </div>
+                    <Badge variant="secondary">{item.sector}</Badge>
                   </div>
 
-                  <CardHeader>
-                    <div className="flex items-center gap-2">
-                      <Badge variant="secondary">{item.sector}</Badge>
-                      <span className="text-xs font-medium text-muted-foreground">
-                        {item.client}
-                      </span>
-                    </div>
-                    <CardTitle className="pt-1 text-base">{item.title}</CardTitle>
-                    <CardDescription>{item.description}</CardDescription>
-                  </CardHeader>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-xs font-medium text-brand-foreground/70">
+                      {item.client}
+                    </span>
+                    <h3 className="font-heading text-lg font-semibold">
+                      {item.title}
+                    </h3>
+                  </div>
 
-                  <CardContent>
-                    <ul className="flex flex-wrap gap-1.5">
-                      {item.tags.map((tag) => (
-                        <li key={tag}>
-                          <Badge variant="outline">{tag}</Badge>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
+                  <p className="text-sm text-brand-foreground/75">
+                    {item.description}
+                  </p>
+
+                  <ul className="mt-auto flex flex-wrap gap-1.5 pt-2">
+                    {item.tags.map((tag) => (
+                      <li key={tag}>
+                        <Badge variant="outline">{tag}</Badge>
+                      </li>
+                    ))}
+                  </ul>
+                </GlassCard>
               </StaggerItem>
             )
           })}
         </Stagger>
       </Container>
-    </section>
+    </BrandBand>
   )
 }

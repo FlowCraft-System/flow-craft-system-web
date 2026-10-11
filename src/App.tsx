@@ -10,6 +10,7 @@ import { Process } from "@/components/sections/process"
 import { Pricing } from "@/components/sections/pricing"
 import { Hardware } from "@/components/sections/hardware"
 import { Portfolio } from "@/components/sections/portfolio"
+import { Testimonials } from "@/components/sections/testimonials"
 import { Faq } from "@/components/sections/faq"
 import { FinalCta } from "@/components/sections/cta"
 
@@ -36,6 +37,7 @@ function App() {
         <Pricing />
         <Hardware />
         <Portfolio />
+        <Testimonials />
         <Faq />
         <FinalCta />
       </main>
