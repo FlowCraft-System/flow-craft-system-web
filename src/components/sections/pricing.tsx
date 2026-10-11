@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import { HugeiconsIcon } from "@hugeicons/react"
 import { CheckmarkCircle02Icon } from "@hugeicons/core-free-icons"
@@ -30,15 +29,11 @@ type Plan = {
 
 function PricingCard({ plan, popular }: { plan: Plan; popular: boolean }) {
   const { t } = useTranslation()
-  const [revealed, setRevealed] = useState(false)
 
   return (
     <Card
-      onMouseEnter={() => setRevealed(true)}
-      onFocus={() => setRevealed(true)}
       className={cn(
         "pricing-card group/card relative h-full overflow-hidden bg-card/60 transition-shadow duration-300",
-        revealed && "pricing-revealed",
         popular ? "ring-2 ring-primary/60" : "hover:ring-primary/40",
       )}
     >
