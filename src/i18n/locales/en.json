@@ -1,0 +1,251 @@
+{
+  "meta": {
+    "title": "FlowCraft Systems — Custom software for small businesses in Maracaibo",
+    "description": "We build custom software that organizes sales, inventory, payments and reports for your small business. Maracaibo, Zulia, Venezuela."
+  },
+  "nav": {
+    "inicio": "Home",
+    "para-quien": "Who it's for",
+    "proceso": "How it works",
+    "precios": "Pricing",
+    "equipos": "Hardware",
+    "portafolio": "Case studies",
+    "faq": "FAQ",
+    "contacto": "Contact"
+  },
+  "actions": {
+    "whatsapp": "Chat on WhatsApp",
+    "schedule": "Book a meeting",
+    "secondaryWhatsapp": "Contact via WhatsApp",
+    "viewCases": "See case studies",
+    "getStarted": "Get started",
+    "language": "Language",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "hero": {
+    "badge": "Maracaibo, Zulia · Venezuela",
+    "title": "Custom software that organizes and grows your business",
+    "titleLead": "Custom software that ",
+    "titleAccent": "organizes and grows",
+    "titleTail": " your business",
+    "subtitle": "We design tailored systems that automate your sales, inventory, payments and reports, so you get your time back and make decisions with data — not guesses.",
+    "resultLabel": "What you get",
+    "result": "Less manual work, full control of your operation and clear profits.",
+    "trust": ["Built for small business", "Ongoing support", "100% tailored"]
+  },
+  "audience": {
+    "eyebrow": "Who it's for",
+    "title": "This service is for you if…",
+    "subtitle": "If you recognize yourself in any of these, we can help.",
+    "items": [
+      "You run a small business and still track everything in notebooks or Excel.",
+      "You lose customers or money to messy sales, payments or debts.",
+      "You don't clearly know how much you earn or which product sells best.",
+      "You manage your inventory or donations by hand.",
+      "You want clear reports without spending hours adding things up.",
+      "You want to grow without hiring more admin staff.",
+      "You need a system built for your process, not a generic template.",
+      "You want someone close who supports you with real help."
+    ]
+  },
+  "process": {
+    "eyebrow": "How it works",
+    "title": "From the first conversation to your system in action",
+    "subtitle": "A simple, close and transparent process at every step.",
+    "steps": [
+      {
+        "title": "Contact",
+        "description": "You message us on WhatsApp or through the form and we talk about your business and what you need to solve."
+      },
+      {
+        "title": "Meeting or visit",
+        "description": "We schedule a meeting at your store or business to understand your operation firsthand."
+      },
+      {
+        "title": "Analysis & proposal",
+        "description": "We analyze your requirements and present a clear proposal with scope, timeline and price."
+      },
+      {
+        "title": "Delivery",
+        "description": "We build the system, train your team and deliver it ready to use."
+      },
+      {
+        "title": "Follow-up & support",
+        "description": "We stay with you after delivery with support and continuous improvements."
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "Clear pricing, tailored to you",
+    "subtitle": "Cost varies with the size and complexity of your system. These are reference ranges so you know what to expect.",
+    "rangeLabel": "Estimated investment",
+    "rangeSuffix": "depending on scope",
+    "disclaimer": "The final price is defined in the proposal, after analyzing your requirements.",
+    "popular": "Most chosen",
+    "cta": "Request this plan",
+    "ctaMessage": "Hi, I'd like a quote for the {{plan}} plan for my business.",
+    "plans": [
+      {
+        "name": "Essential",
+        "price": "$100",
+        "period": "from",
+        "description": "To take the first step and organize what matters most.",
+        "features": [
+          "1 core module (sales or inventory)",
+          "Up to 2 users",
+          "Basic reports",
+          "Training and delivery",
+          "30 days of support"
+        ]
+      },
+      {
+        "name": "Professional",
+        "price": "$350",
+        "period": "from",
+        "description": "The favorite of small businesses that want full control.",
+        "features": [
+          "Multiple modules (sales, customers, payments, debts)",
+          "Unlimited users",
+          "Profit dashboard and reports",
+          "Backups",
+          "90 days of support"
+        ]
+      },
+      {
+        "name": "Advanced",
+        "price": "$600",
+        "period": "from",
+        "description": "Complete systems with analytics and integrations.",
+        "features": [
+          "Fully custom system",
+          "Advanced analytics and dashboards",
+          "Integrations and automations",
+          "Roles and permissions",
+          "Extended support and maintenance"
+        ]
+      }
+    ]
+  },
+  "hardware": {
+    "eyebrow": "Hardware & warranty",
+    "title": "We also sell the hardware you need",
+    "subtitle": "Don't search on your own. We source, configure and warrant the physical equipment your system needs.",
+    "guarantee": "All our equipment comes with warranty and support.",
+    "items": [
+      "Computer / CPU",
+      "Monitor / Screen",
+      "Keyboard & Mouse",
+      "Printers & receipt printers",
+      "Barcode scanners",
+      "Networks & Wi‑Fi",
+      "Power regulators & UPS"
+    ]
+  },
+  "portfolio": {
+    "eyebrow": "Case studies",
+    "title": "Systems already at work",
+    "subtitle": "Real solutions built for real businesses and organizations.",
+    "caseLabel": "Project",
+    "tagsLabel": "Includes",
+    "cases": [
+      {
+        "client": "Café Americano Adriani",
+        "sector": "Trading company",
+        "title": "Management system",
+        "description": "We improved the organization of their sales, customers, pending products, payments, debts and profit management, plus a complete reporting section.",
+        "tags": ["Sales", "Customers", "Pending products", "Payments", "Debts", "Profits", "Reports"]
+      },
+      {
+        "client": "Wayuu Taya",
+        "sector": "NGO / Foundation",
+        "title": "Donation management system",
+        "description": "We built a platform to organize their inventory and gain better control of donations, with reports and analytics to support decisions.",
+        "tags": ["Inventory", "Donations", "Control", "Reports", "Analytics"]
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "What people usually ask us",
+    "subtitle": "If your question isn't here, message us on WhatsApp and we'll reply.",
+    "items": [
+      {
+        "question": "How long does it take to build my system?",
+        "answer": "It depends on scope. A simple system can take 2 to 4 weeks, and a complete one 6 to 12 weeks. In the proposal we give you a clear schedule with dates."
+      },
+      {
+        "question": "What do I need to buy or have?",
+        "answer": "We can work with the equipment you already own. If you're missing something, we advise you and also sell you the hardware (CPU, screen, keyboard, mouse and more) with warranty."
+      },
+      {
+        "question": "How soon can I see results?",
+        "answer": "From the first week you'll notice more order and control. The biggest results — saved time and data-driven decisions — show up in the first month of steady use."
+      },
+      {
+        "question": "Do you work only in Maracaibo?",
+        "answer": "Our base is in Maracaibo, Zulia, and we can serve businesses across Venezuela remotely."
+      },
+      {
+        "question": "Is the system custom or a template?",
+        "answer": "100% custom to your process. We don't adapt your business to a software — we adapt the software to your business."
+      },
+      {
+        "question": "Do you offer support after delivery?",
+        "answer": "Yes. Every project includes support and follow-up, and we offer ongoing maintenance plans."
+      },
+      {
+        "question": "How does payment work?",
+        "answer": "We work in milestones: a deposit to start and the rest on delivery. We coordinate everything on WhatsApp."
+      },
+      {
+        "question": "What happens with my data?",
+        "answer": "Your data is yours and stays secure. We follow good practices for backups and access control."
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Next step",
+    "title": "Ready to start?",
+    "subtitle": "Tell us what your business needs and we'll prepare a proposal — no strings attached.",
+    "interestLabel": "What are you interested in? (optional)",
+    "interests": [
+      "Inventory",
+      "Sales & invoicing",
+      "Customers / CRM",
+      "Payments & debts",
+      "Reports & analytics",
+      "Computer hardware",
+      "Support & maintenance",
+      "Website / custom system"
+    ],
+    "primary": "Chat on WhatsApp",
+    "secondary": "Book a meeting",
+    "messageIntro": "Hi, I'm interested in: "
+  },
+  "footer": {
+    "tagline": "Custom software development for small businesses. We organize, automate and grow your business.",
+    "servicesTitle": "Services",
+    "companyTitle": "Company",
+    "contactTitle": "Contact",
+    "services": [
+      "Custom software",
+      "Management systems",
+      "Reports & analytics",
+      "Hardware sales",
+      "Support & maintenance"
+    ],
+    "company": [
+      "Who it's for",
+      "How it works",
+      "Case studies",
+      "FAQ"
+    ],
+    "socialTitle": "Follow us",
+    "rights": "All rights reserved.",
+    "madeIn": "Made in Maracaibo, Venezuela"
+  }
+}

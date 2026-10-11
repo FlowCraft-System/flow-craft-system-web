@@ -1,0 +1,251 @@
+{
+  "meta": {
+    "title": "FlowCraft Systems — Software a la medida para PYMES en Maracaibo",
+    "description": "Desarrollamos software personalizado que ordena ventas, inventario, pagos y reportes de tu PYME. Maracaibo, Zulia, Venezuela."
+  },
+  "nav": {
+    "inicio": "Inicio",
+    "para-quien": "Para quién",
+    "proceso": "Cómo funciona",
+    "precios": "Precios",
+    "equipos": "Equipos",
+    "portafolio": "Casos",
+    "faq": "Preguntas",
+    "contacto": "Contacto"
+  },
+  "actions": {
+    "whatsapp": "Escríbenos por WhatsApp",
+    "schedule": "Agendar una cita",
+    "secondaryWhatsapp": "Contactar por WhatsApp",
+    "viewCases": "Ver casos de éxito",
+    "getStarted": "Empezar ahora",
+    "language": "Idioma",
+    "theme": "Tema",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  },
+  "hero": {
+    "badge": "Maracaibo, Zulia · Venezuela",
+    "title": "Software a la medida que ordena y hace crecer tu negocio",
+    "titleLead": "Software a la medida que ",
+    "titleAccent": "ordena y hace crecer",
+    "titleTail": " tu negocio",
+    "subtitle": "Diseñamos sistemas personalizados que automatizan tus ventas, inventario, pagos y reportes para que recuperes tiempo y tomes decisiones con datos, no con suposiciones.",
+    "resultLabel": "Lo que obtienes",
+    "result": "Menos trabajo manual, control total de tu operación y ganancias claras.",
+    "trust": ["Hecho para PYMES", "Soporte continuo", "100% personalizado"]
+  },
+  "audience": {
+    "eyebrow": "Para quién es",
+    "title": "Este servicio es para ti si…",
+    "subtitle": "Si te identificas con alguno de estos puntos, podemos ayudarte.",
+    "items": [
+      "Tienes una PYME o negocio local y aún manejas todo en cuadernos o Excel.",
+      "Pierdes clientes o dinero por desorden en ventas, pagos o deudas.",
+      "No sabes con claridad cuánto ganas ni qué producto se vende más.",
+      "Controlas tu inventario o tus donaciones de forma manual.",
+      "Quieres reportes claros sin pasar horas sumando y cuadrando cuentas.",
+      "Quieres crecer sin contratar más personal administrativo.",
+      "Necesitas un sistema hecho para tu proceso, no una plantilla genérica.",
+      "Quieres a alguien cercano que te acompañe y te dé soporte real."
+    ]
+  },
+  "process": {
+    "eyebrow": "Cómo funciona",
+    "title": "De la primera conversación a tu sistema funcionando",
+    "subtitle": "Un proceso simple, cercano y transparente en cada paso.",
+    "steps": [
+      {
+        "title": "Contacto",
+        "description": "Nos escribes por WhatsApp o el formulario y conversamos sobre tu negocio y lo que necesitas resolver."
+      },
+      {
+        "title": "Cita o visita",
+        "description": "Agendamos una reunión en tu local o negocio para entender tu operación de primera mano."
+      },
+      {
+        "title": "Análisis y propuesta",
+        "description": "Analizamos tus requerimientos y te presentamos una propuesta clara con alcance, tiempos y precio."
+      },
+      {
+        "title": "Entrega",
+        "description": "Desarrollamos el sistema, te capacitamos y lo entregamos listo para usar."
+      },
+      {
+        "title": "Seguimiento y soporte",
+        "description": "Te acompañamos después de la entrega con soporte y mejoras continuas."
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Precios",
+    "title": "Precios claros y a tu medida",
+    "subtitle": "El costo varía según el tamaño y la complejidad de tu sistema. Estos son rangos de referencia para que sepas qué esperar.",
+    "rangeLabel": "Inversión estimada",
+    "rangeSuffix": "según el alcance",
+    "disclaimer": "El precio final se define en la propuesta, después de analizar tus requerimientos.",
+    "popular": "Más elegido",
+    "cta": "Cotizar este plan",
+    "ctaMessage": "Hola, quiero cotizar el plan {{plan}} para mi negocio.",
+    "plans": [
+      {
+        "name": "Esencial",
+        "price": "$100",
+        "period": "desde",
+        "description": "Para dar el primer paso y ordenar lo más urgente.",
+        "features": [
+          "1 módulo principal (ventas o inventario)",
+          "Hasta 2 usuarios",
+          "Reportes básicos",
+          "Capacitación y entrega",
+          "Soporte por 30 días"
+        ]
+      },
+      {
+        "name": "Profesional",
+        "price": "$350",
+        "period": "desde",
+        "description": "El más elegido por PYMES que quieren controlar todo.",
+        "features": [
+          "Varios módulos (ventas, clientes, pagos, deudas)",
+          "Usuarios ilimitados",
+          "Panel de ganancias y reportes",
+          "Copias de seguridad",
+          "Soporte por 90 días"
+        ]
+      },
+      {
+        "name": "Avanzado",
+        "price": "$600",
+        "period": "desde",
+        "description": "Sistemas completos con analítica e integraciones.",
+        "features": [
+          "Sistema a la medida completo",
+          "Analítica y tableros avanzados",
+          "Integraciones y automatizaciones",
+          "Roles y permisos",
+          "Soporte y mantenimiento extendido"
+        ]
+      }
+    ]
+  },
+  "hardware": {
+    "eyebrow": "Equipos y garantía",
+    "title": "También te vendemos los equipos que necesitas",
+    "subtitle": "No busques por tu cuenta. Conseguimos, configuramos y te damos garantía de los equipos físicos que tu sistema necesita.",
+    "guarantee": "Todos nuestros equipos incluyen garantía y soporte.",
+    "items": [
+      "Computadora / CPU",
+      "Monitor / Pantalla",
+      "Teclado y Mouse",
+      "Impresoras y tickets",
+      "Lectores de código de barras",
+      "Redes y Wi‑Fi",
+      "Reguladores y UPS"
+    ]
+  },
+  "portfolio": {
+    "eyebrow": "Casos de éxito",
+    "title": "Sistemas que ya están trabajando",
+    "subtitle": "Soluciones reales construidas para negocios y organizaciones reales.",
+    "caseLabel": "Proyecto",
+    "tagsLabel": "Incluye",
+    "cases": [
+      {
+        "client": "Café Americano Adriani",
+        "sector": "Empresa comercializadora",
+        "title": "Sistema de gestión administrativa",
+        "description": "Mejoramos la organización de sus ventas, clientes, productos pendientes, pagos, deudas y gestión de ganancias, junto a un apartado completo de reportes.",
+        "tags": ["Ventas", "Clientes", "Productos pendientes", "Pagos", "Deudas", "Ganancias", "Reportes"]
+      },
+      {
+        "client": "Wayuu Taya",
+        "sector": "ONG / Fundación",
+        "title": "Sistema de gestión de donaciones",
+        "description": "Construimos una plataforma para organizar su inventario y tener un mejor control de las donaciones, con reportes y analítica para tomar decisiones.",
+        "tags": ["Inventario", "Donaciones", "Control", "Reportes", "Analítica"]
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Todo lo que suelen preguntarnos",
+    "subtitle": "Si tu duda no está aquí, escríbenos por WhatsApp y te respondemos.",
+    "items": [
+      {
+        "question": "¿Cuánto tiempo tardan en desarrollar mi sistema?",
+        "answer": "Depende del alcance. Un sistema simple puede estar entre 2 y 4 semanas, y uno completo entre 6 y 12 semanas. En la propuesta te damos un cronograma claro con fechas."
+      },
+      {
+        "question": "¿Qué necesito comprar o tener?",
+        "answer": "Podemos trabajar con los equipos que ya tengas. Si te falta algo, te asesoramos y también te vendemos los equipos (CPU, pantalla, teclado, mouse, entre otros) con garantía."
+      },
+      {
+        "question": "¿Cuánto puedo ver resultados?",
+        "answer": "Desde la primera semana notarás más orden y control. Los mayores resultados —ahorro de tiempo y decisiones con datos— se ven al primer mes de uso constante."
+      },
+      {
+        "question": "¿Trabajan solo en Maracaibo?",
+        "answer": "Nuestra base está en Maracaibo, Zulia, y podemos atender de forma remota a negocios de toda Venezuela."
+      },
+      {
+        "question": "¿El sistema es personalizado o una plantilla?",
+        "answer": "100% personalizado a tu proceso. No adaptamos tu negocio a un software, sino el software a tu negocio."
+      },
+      {
+        "question": "¿Ofrecen soporte después de la entrega?",
+        "answer": "Sí. Todos los proyectos incluyen soporte y seguimiento, y ofrecemos planes de mantenimiento continuo."
+      },
+      {
+        "question": "¿Cómo se paga?",
+        "answer": "Manejamos pagos por partes: un anticipo para iniciar y el resto contra entrega. Coordinamos todo por WhatsApp."
+      },
+      {
+        "question": "¿Qué pasa con mis datos?",
+        "answer": "Tus datos son tuyos y quedan seguros. Trabajamos con buenas prácticas de respaldo y control de acceso."
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Siguiente paso",
+    "title": "¿Listo para empezar?",
+    "subtitle": "Cuéntanos qué necesita tu negocio y te preparamos una propuesta sin compromiso.",
+    "interestLabel": "¿Qué te interesa? (opcional)",
+    "interests": [
+      "Inventario",
+      "Ventas y facturación",
+      "Clientes / CRM",
+      "Pagos y deudas",
+      "Reportes y analítica",
+      "Equipos de computadora",
+      "Soporte y mantenimiento",
+      "Página web / sistema a medida"
+    ],
+    "primary": "Escríbenos por WhatsApp",
+    "secondary": "Agendar una cita",
+    "messageIntro": "Hola, me interesa: "
+  },
+  "footer": {
+    "tagline": "Desarrollo de software personalizado para PYMES. Ordenamos, automatizamos y hacemos crecer tu negocio.",
+    "servicesTitle": "Servicios",
+    "companyTitle": "Empresa",
+    "contactTitle": "Contacto",
+    "services": [
+      "Software a la medida",
+      "Sistemas de gestión",
+      "Reportes y analítica",
+      "Venta de equipos",
+      "Soporte y mantenimiento"
+    ],
+    "company": [
+      "Para quién",
+      "Cómo funciona",
+      "Casos de éxito",
+      "Preguntas frecuentes"
+    ],
+    "socialTitle": "Síguenos",
+    "rights": "Todos los derechos reservados.",
+    "madeIn": "Hecho en Maracaibo, Venezuela"
+  }
+}

@@ -1,10 +1,37 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>flow-craft-system-web</title>
+    <meta
+      name="description"
+      content="FlowCraft Systems: desarrollo de software personalizado para PYMES. Ordenamos ventas, inventario, pagos y reportes. Maracaibo, Zulia, Venezuela."
+    />
+    <meta name="theme-color" content="#01348f" />
+    <meta name="color-scheme" content="light dark" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FlowCraft Systems — Software a la medida para PYMES" />
+    <meta
+      property="og:description"
+      content="Software personalizado que ordena y hace crecer tu negocio. Maracaibo, Zulia, Venezuela."
+    />
+    <meta property="og:locale" content="es_VE" />
+    <title>FlowCraft Systems — Software a la medida para PYMES en Maracaibo</title>
+    <script>
+      ;(function () {
+        try {
+          var stored = localStorage.getItem("fc-theme")
+          var dark =
+            stored === "dark" ||
+            ((!stored || stored === "system") &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches)
+          var root = document.documentElement
+          root.classList.toggle("dark", dark)
+          root.style.colorScheme = dark ? "dark" : "light"
+        } catch (e) {}
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>
